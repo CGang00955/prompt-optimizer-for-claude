@@ -2,14 +2,15 @@
   "name": "prompt-optimizer-for-claude",
   "version": "1.0.0",
   "description": "🚀 One-command prompt optimizer for Claude Code - Based on Google's 68-page prompting guide and Lao Jin's metaprompt techniques",
-  "main": "src/index.js",
+  "main": "bin/install.js",
   "bin": {
-    "claude-optimize": "bin/install.js"
+    "prompt-optimizer-for-claude": "bin/install.js"
   },
   "scripts": {
-    "install": "node scripts/install.js",
-    "test": "node src/test.js",
-    "postinstall": "node scripts/postinstall.js"
+    "test": "node test.js",
+    "lint": "echo \"No linting configured\"",
+    "lint:typescript": "echo \"No TypeScript linting configured\"",
+    "start": "node bin/install.js"
   },
   "keywords": [
     "claude",
