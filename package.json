@@ -1,0 +1,49 @@
+{
+  "name": "prompt-optimizer-for-claude",
+  "version": "1.0.0",
+  "description": "🚀 One-command prompt optimizer for Claude Code - Based on Google's 68-page prompting guide and Lao Jin's metaprompt techniques",
+  "main": "src/index.js",
+  "bin": {
+    "claude-optimize": "bin/install.js"
+  },
+  "scripts": {
+    "install": "node scripts/install.js",
+    "test": "node src/test.js",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "keywords": [
+    "claude",
+    "prompt-engineering",
+    "ai",
+    "optimization",
+    "prompt-optimizer",
+    "claude-code",
+    "metaprompt",
+    "google-prompting-guide"
+  ],
+  "author": {
+    "name": "Claude Prompt Optimizer Team",
+    "email": "claude-prompt-optimizer@example.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CGang00955/prompt-optimizer-for-claude.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CGang00955/prompt-optimizer-for-claude/issues"
+  },
+  "homepage": "https://github.com/CGang00955/prompt-optimizer-for-claude#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0"
+  }
+}
