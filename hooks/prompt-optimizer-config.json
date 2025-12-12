@@ -1,0 +1,117 @@
+{
+  "version": "1.0.0",
+  "description": "Claude Code 提示词优化Hook配置",
+  "author": "基于谷歌68页提示词圣经和老金元提示词技术",
+  "hooks": {
+    "prompt_optimizer": {
+      "file": "prompt-optimizer-hook.ts",
+      "description": "基础提示词优化Hook",
+      "features": [
+        "四大要素检测（Persona、Task、Context、Format）",
+        "提示词长度优化",
+        "结构化建议生成",
+        "实时优化反馈"
+      ],
+      "triggers": [
+        "user_prompt_input",
+        "prompt_generation"
+      ]
+    },
+    "metaprompt_enhancer": {
+      "file": "metaprompt-enhancer-hook.ts",
+      "description": "老金元提示词全自动强化Hook",
+      "features": [
+        "智能任务类型识别",
+        "动态角色预设匹配",
+        "上下文自动增强",
+        "格式智能优化",
+        "质量评估系统",
+        "关键词提取"
+      ],
+      "triggers": [
+        "complex_prompt_input",
+        "advanced_generation_needed"
+      ]
+    }
+  },
+  "settings": {
+    "debug_mode": false,
+    "auto_optimize": true,
+    "min_prompt_length": 5,
+    "optimization_threshold": 0.7,
+    "max_iterations": 3
+  },
+  "optimization_strategies": {
+    "persona_enhancement": {
+      "enabled": true,
+      "library_size": 5,
+      "auto_match": true
+    },
+    "context_expansion": {
+      "enabled": true,
+      "max_context_items": 3,
+      "industry_specific": true
+    },
+    "format_optimization": {
+      "enabled": true,
+      "prefer_structured": true,
+      "include_examples": true
+    },
+    "constraint_addition": {
+      "enabled": true,
+      "smart_constraints": true,
+      "user_preferences": true
+    }
+  },
+  "quality_metrics": {
+    "clarity": {
+      "weight": 0.3,
+      "indicators": ["clear_instruction", "unambiguous_language"]
+    },
+    "completeness": {
+      "weight": 0.25,
+      "indicators": ["has_persona", "has_context", "has_constraints"]
+    },
+    "specificity": {
+      "weight": 0.25,
+      "indicators": ["concrete_details", "measurable_outcomes"]
+    },
+    "actionability": {
+      "weight": 0.2,
+      "indicators": ["executable_steps", "clear_deliverables"]
+    }
+  },
+  "google_prompting_principles": {
+    "best_practices": [
+      "使用自然语言但保持精确",
+      "平均21个词为最佳长度",
+      "提供具体而非抽象的指令",
+      "包含必要的上下文信息",
+      "明确指定输出格式",
+      "设置合理的约束条件",
+      "使用迭代优化方法"
+    ],
+    "avoid": [
+      "过于简短的提示词（<9词）",
+      "模糊不清的描述",
+      "缺乏上下文的指令",
+      "没有指定输出格式",
+      "过多的技术术语"
+    ]
+  },
+  "laojin_metaprompt_techniques": {
+    "core_principles": [
+      "元认知层构建",
+      "动态模板生成",
+      "上下文感知增强",
+      "多维度质量评估",
+      "自适应优化策略"
+    ],
+    "enhancement_matrix": {
+      "role_play": "智能角色预设匹配",
+      "task_decomposition": "任务分解与结构化",
+      "context_mining": "上下文信息挖掘",
+      "format_evolution": "格式动态演化"
+    }
+  }
+}
